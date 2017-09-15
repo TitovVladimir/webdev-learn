@@ -10,6 +10,7 @@ N=10;
 
 var k = prompt("Число для поиска: ");
 if ((k == "") || (isNaN(k))) {
+  alert("Ошибка ввода!");
   windows.stop;
 }  
 
