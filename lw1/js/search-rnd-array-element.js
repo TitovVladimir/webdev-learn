@@ -1,31 +1,30 @@
 "use strict"
-var k;
-var N;
+var searchNumber;
 var i;
-var z=1;
-var a = [];
+var isFound = false;
+var randomNumber = [];
 var output = "";
 
-N=10;
+for(i = 1; i <= 10; i++) {
+  randomNumber[i] = Math.floor(Math.random() * (16 - 1)) + 1;
+  output = output + "Сгенерированное число[" + i + "из" + 10 + "]=" + randomNumber[i] + "\n";
+}
 
-var k = prompt("Число для поиска: ");
-if ((k == "") || (isNaN(k))) {
+var searchNumber = prompt("Число для поиска: ");
+if ((searchNumber == "") || (isNaN(searchNumber))) {
   alert("Ошибка ввода!");
   windows.stop;
 }  
 
-
-for(i = 1; i <= N; i++) {
-  a[i] = Math.floor(Math.random() * (16 - 1)) + 1;
-  output = output + "Сгенерированное число[" + i + "из" + N + "]=" + a[i] + "\n";
-    if (a[i] == k) {
-      z = 2;
-	}	
+for(i = 1; i <= 10; i++) {
+  if (randomNumber[i] == searchNumber) {
+    isFound = true;
+  }	
 }
 
-if (z == 2) {
-  output = output + "Число " + k + " найдено!";
+if (isFound == true) {
+  output = output + "Число " + searchNumber + " найдено!";
 } else {
-  output = output + "Число " + k + " не найдено!";
+  output = output + "Число " + searchNumber + " не найдено!";
 }
 alert(output);
