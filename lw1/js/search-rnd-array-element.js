@@ -1,36 +1,30 @@
-program SearchRndElementInRndArray;
-uses crt;
-const N = 10;
-var
-  a: array [1..N] of integer;
-  k: integer;
-  isFound: boolean;
-  i: integer;
-begin
-  randomize;
+"use strict"
+var k;
+var N;
+var i;
+var z=1;
+var a = [];
+var output = "";
+
+  N=10;
+
   
-  k := Random(15);
-  IsFound := False;
+  var k = prompt("Число для поиска: ");
   
-  writeln('Filled random array: ');
-  for i := 1 to N do 
-  begin
-    a[i] := Random(15);
-    write(a[i], ' ');
-      if a[i] = k then 
-      begin
-        IsFound := True;
-      end;
-  end;
+  for(i = 1; i <= N; i++){
+	  a[i] = Math.floor(Math.random() * (16 - 1)) + 1;
+	  output = output + "Сгенерированное число[" + i + "из" + N + "]=" + a[i] + "\n";
+	  if (a[i] == k){
+		  z = 2;
+	  }	
+  }
+  if (z == 2)  {
+	 output = output + "Число " + k + " найдено!";
+  } else {
+	 output = output + "Число " + k + " не найдено!";
+	}
+  	  alert(output);
+	  
   
-  writeln;  
   
-  if IsFound = True then
-  begin
-    writeln('Element ', k, ' is found!');
-  end  
-  else
-  begin
-    writeln('Element ', k, ' not found');
-  end;  
-end.
+  
