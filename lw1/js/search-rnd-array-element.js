@@ -9,7 +9,11 @@ var output = "";
 N=10;
 
 var k = prompt("Число для поиска: ");
-  
+if ((k == "") || (isNaN(k))) {
+  windows.stop;
+}  
+
+
 for(i = 1; i <= N; i++) {
   a[i] = Math.floor(Math.random() * (16 - 1)) + 1;
   output = output + "Сгенерированное число[" + i + "из" + N + "]=" + a[i] + "\n";
@@ -24,7 +28,3 @@ if (z == 2) {
   output = output + "Число " + k + " не найдено!";
 }
 alert(output);
-	  
-  
-  
-  
