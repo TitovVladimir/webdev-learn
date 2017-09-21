@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Istok+Web');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
 
 * {
   margin: 0;
@@ -11,7 +11,8 @@ body {
   height: 100%;
 }
 
-img {
+img  {
+  position: absolute;
   padding-top: 11.5px;
   padding-bottom: 11.5px;
   max-width: 100%;	
@@ -25,10 +26,12 @@ header {
   background-image: linear-gradient(90deg,#58adec,#36cf94);
   float: left;
   width: 100%;
+  height:46px;
   border-bottom: 1px solid #388c96;
 }
 
 #helpbut{
+  position: relative;
   height: 15px;
   width: 320px;
 }
@@ -41,7 +44,7 @@ header {
 header>div#helpbut{
   text-align: center;
   padding-top: 15px;
-  padding-bottom: 11.5px;
+  padding-bottom: 0px;
   padding-right: 20.5%;
   float: right;
   color: white;
@@ -55,4 +58,17 @@ small{
 
 #helpbut>a:last-child{
   margin-left:3%;	
+} /*header*/
+
+#main {
+  float:left;
+  height: 550px;
+  width: 400px;	
+  padding-left: 40%;
+  padding-top: 115px;
+}
+
+#main>h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7em;
 }
