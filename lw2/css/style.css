@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Istok+Web');
 
-/* font-family: 'Open Sans', sans-serif; */
 
 * {
   margin: 0;
-  padding: 0;  
-  background-color: #cccc;
+  padding: 0; 	
 }
 
 body {
@@ -14,7 +12,47 @@ body {
 }
 
 img {
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
   max-width: 100%;	
-  height: auto;
-  width: auto;
+  height: 23px;
+  width: 23px; 
+  float: left;
+  margin-left:50%;
+}
+
+header {
+  background-image: linear-gradient(90deg,#58adec,#36cf94);
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #388c96;
+}
+
+#helpbut{
+  height: 15px;
+  width: 320px;
+}
+
+#helpbut>a {
+  color: white;
+  text-decoration: none;	
+}
+
+header>div#helpbut{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 11.5px;
+  padding-right: 20.5%;
+  float: right;
+  color: white;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 0.8em;
+}
+
+small{
+  font-size: 0.6em;
+}
+
+#helpbut>a:last-child{
+  margin-left:3%;	
 }
