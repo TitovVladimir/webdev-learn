@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Istok+Web');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
 * {
   margin: 0;
   padding: 0; 	
@@ -71,4 +71,18 @@ small{
 #main>h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 1.7em;
+  margin-bottom:25px;
 }
+
+#main>input {
+  padding-left: 10px;
+  margin-bottom:25px;
+  height: 45px;
+  width: 380px;	
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.3em;
+  border: 1px solid #e6ecf0;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input::-webkit-input-placeholder { color: #aab8c2; }
