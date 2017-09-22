@@ -30,18 +30,18 @@ header {
   border-bottom: 1px solid #388c96;
 }
 
-#helpbut{
+#helpbutton{
   position: relative;
   height: 15px;
   width: 320px;
 }
 
-#helpbut>a {
+#helpbutton>a {
   color: white;
   text-decoration: none;	
 }
 
-header>div#helpbut{
+header>div#helpbutton{
   text-align: center;
   padding-top: 15px;
   padding-bottom: 0px;
@@ -56,7 +56,7 @@ small{
   font-size: 0.6em;
 }
 
-#helpbut>a:last-child{
+#helpbutton>a:last-child{
   margin-left:3%;	
 } /*header*/
 
@@ -87,14 +87,14 @@ small{
 
 input::-webkit-input-placeholder { color: #aab8c2; }
 
-#glblock {
+#сheckmarkblock {
   font-family: 'Roboto', sans-serif;
   font-size: 0.87em;
   color: #66757f;
   margin-bottom:25px;
 }
 
-#glblock>span>a{
+#сheckmarkblock>span>a{
   text-decoration: none;
   color: #1c94e0;
 }
@@ -118,7 +118,7 @@ input::-webkit-input-placeholder { color: #aab8c2; }
   transition: background-color.3s ease;
 }
 
-#sogl {
+#agreement {
   height: 65px;
   width: 390px;
   font-family: 'Roboto', sans-serif;
@@ -127,12 +127,12 @@ input::-webkit-input-placeholder { color: #aab8c2; }
   margin-bottom:25px;
 }
 
-#sogl>span>a{
+#agreement>span>a{
   text-decoration: none;
   color: #1c94e0;
 }
 
-#dop {
+#settings {
   height: 80px;
   width: 390px;
   font-family: 'Roboto', sans-serif;
@@ -140,7 +140,7 @@ input::-webkit-input-placeholder { color: #aab8c2; }
   color: #66757f;
 }
 
-#dop>span>a{
+#settings>span>a{
   text-decoration: none;
   color: #1c94e0;
 }
