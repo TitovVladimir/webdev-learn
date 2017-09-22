@@ -110,8 +110,37 @@ input::-webkit-input-placeholder { color: #aab8c2; }
   background-color: #1da1f2;
   padding:12px 20px;
   transition: background-color.3s ease;
+  margin-bottom:25px;
 }
+
 #main>a>input:hover {
   background-color: #006dbf;
   transition: background-color.3s ease;
+}
+
+#sogl {
+  height: 65px;
+  width: 390px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.75em;
+  color: #66757f;
+  margin-bottom:25px;
+}
+
+#sogl>span>a{
+  text-decoration: none;
+  color: #1c94e0;
+}
+
+#dop {
+  height: 80px;
+  width: 390px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  color: #66757f;
+}
+
+#dop>span>a{
+  text-decoration: none;
+  color: #1c94e0;
 }
