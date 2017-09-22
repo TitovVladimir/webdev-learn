@@ -99,7 +99,7 @@ input::-webkit-input-placeholder { color: #aab8c2; }
   color: #1c94e0;
 }
 
-#main>a>input{
+#button>input{
   height: 50px;
   width: 390px;		
   border-radius: 25px 25px 25px 25px;
@@ -113,7 +113,7 @@ input::-webkit-input-placeholder { color: #aab8c2; }
   margin-bottom:25px;
 }
 
-#main>a>input:hover {
+#button>input:hover {
   background-color: #006dbf;
   transition: background-color.3s ease;
 }
