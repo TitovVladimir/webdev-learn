@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Istok+Web');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
 * {
   margin: 0;
   padding: 0; 	
@@ -11,7 +12,7 @@ body {
   height: 100%;
 }
 
-img  {
+img {
   position: absolute;
   padding-top: 11.5px;
   padding-bottom: 11.5px;
@@ -19,29 +20,29 @@ img  {
   height: 23px;
   width: 23px; 
   float: left;
-  margin-left:50%;
+  margin-left: 50%;
 }
 
 header {
   background-image: linear-gradient(90deg,#58adec,#36cf94);
   float: left;
   width: 100%;
-  height:46px;
+  height: 46px;
   border-bottom: 1px solid #388c96;
 }
 
-#helpbutton{
+#helpbutton {
   position: relative;
   height: 15px;
   width: 320px;
 }
 
-#helpbutton>a {
+#helpbutton > a {
   color: white;
   text-decoration: none;	
 }
 
-header>div#helpbutton{
+header > div#helpbutton {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 0px;
@@ -52,13 +53,13 @@ header>div#helpbutton{
   font-size: 0.8em;
 }
 
-small{
+small {
   font-size: 0.6em;
 }
 
-#helpbutton>a:last-child{
-  margin-left:3%;	
-} /*header*/
+#helpbutton > a:last-child {
+  margin-left: 3%;	
+}
 
 #main {
   float: left;
@@ -68,15 +69,15 @@ small{
   padding-top: 115px;
 }
 
-#main>h1 {
+#main > h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 1.7em;
-  margin-bottom:25px;
+  margin-bottom: 25px;
 }
 
-#main>input {
+#main > input {
   padding: 12px;
-  margin-bottom:25px;
+  margin-bottom: 25px;
   height: 20px;
   width: 372px;	
   font-family: 'Roboto Condensed', sans-serif;
@@ -85,8 +86,8 @@ small{
   border-radius: 3px 3px 3px 3px;
 }
 
-#main>input:focus {
-	outline: 0;
+#main > input:focus {
+  outline: 0;
   border-color: #7fc1d9;
 }
 
@@ -96,15 +97,19 @@ input::-webkit-input-placeholder { color: #aab8c2; }
   font-family: 'Roboto', sans-serif;
   font-size: 0.87em;
   color: #66757f;
-  margin-bottom:25px;
+  margin-bottom: 25px;
 }
 
-#сheckmarkblock>span>a{
+#сheckmarkblock > span > a {
   text-decoration: none;
   color: #1c94e0;
 }
 
-#button>input{
+#сheckmarkblock > span > a:hover {
+  text-decoration: underline;	
+}
+
+#button > input {
   height: 50px;
   width: 390px;		
   border-radius: 25px 25px 25px 25px;
@@ -113,12 +118,13 @@ input::-webkit-input-placeholder { color: #aab8c2; }
   color : white;
   border: 0px;
   background-color: #1da1f2;
-  padding:12px 20px;
+  padding: 12px 20px;
   transition: background-color.3s ease;
-  margin-bottom:25px;
+  margin-bottom: 25px;
 }
 
-#button>input:hover {
+#button > input:hover {
+  cursor: pointer;
   background-color: #006dbf;
   transition: background-color.3s ease;
 }
@@ -129,12 +135,16 @@ input::-webkit-input-placeholder { color: #aab8c2; }
   font-family: 'Roboto', sans-serif;
   font-size: 0.75em;
   color: #66757f;
-  margin-bottom:25px;
+  margin-bottom: 25px;
 }
 
-#agreement>span>a{
+#agreement > span > a {
   text-decoration: none;
   color: #1c94e0;
+}
+
+#agreement > span > a:hover {
+  text-decoration: underline;
 }
 
 #settings {
@@ -145,7 +155,11 @@ input::-webkit-input-placeholder { color: #aab8c2; }
   color: #66757f;
 }
 
-#settings>span>a{
+#settings > span > a {
   text-decoration: none;
   color: #1c94e0;
+}
+
+#settings > span > a:hover {
+  text-decoration: underline;	
 }
