@@ -61,10 +61,10 @@ small{
 } /*header*/
 
 #main {
-  float:left;
+  float: left;
   height: 550px;
   width: 400px;	
-  padding-left: 40%;
+  padding-left: 39.3%;
   padding-top: 115px;
 }
 
@@ -75,14 +75,19 @@ small{
 }
 
 #main>input {
-  padding-left: 10px;
+  padding: 12px;
   margin-bottom:25px;
-  height: 45px;
-  width: 380px;	
+  height: 20px;
+  width: 372px;	
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.3em;
   border: 1px solid #e6ecf0;
   border-radius: 3px 3px 3px 3px;
+}
+
+#main>input:focus {
+	outline: 0;
+  border-color: #7fc1d9;
 }
 
 input::-webkit-input-placeholder { color: #aab8c2; }
