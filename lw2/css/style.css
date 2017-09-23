@@ -12,7 +12,37 @@ body {
   height: 100%;
 }
 
-img {
+header {
+  background-image: linear-gradient(90deg,#58adec,#36cf94);
+  float: left;
+  width: 100%;
+  height: 46px;
+  border-bottom: 1px solid #388c96;
+}
+
+#main {
+  height: 550px;
+  width: 400px;	
+  margin: auto;
+  padding-top: 160px;
+}
+
+#agreementmarkblock {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.87em;
+  color: #66757f;
+  margin-bottom: 25px;
+}
+
+#settings {
+  height: 80px;
+  width: 390px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  color: #66757f;
+}
+
+header > a > img {
   position: absolute;
   padding-top: 11.5px;
   padding-bottom: 11.5px;
@@ -23,50 +53,33 @@ img {
   margin-left: 50%;
 }
 
-header {
-  background-image: linear-gradient(90deg,#58adec,#36cf94);
-  float: left;
-  width: 100%;
-  height: 46px;
-  border-bottom: 1px solid #388c96;
-}
-
-#helpbutton {
-  position: relative;
+.helpbuttons {
   height: 15px;
   width: 320px;
 }
 
-#helpbutton > a {
-  color: white;
-  text-decoration: none;	
-}
-
-header > div#helpbutton {
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 0px;
-  padding-right: 20.5%;
-  float: right;
+.helpbuttons > a {
   color: white;
   font-family: 'Istok Web', sans-serif;
   font-size: 0.8em;
+  text-decoration: none;	
 }
 
-small {
+.helpbuttons > a > span > b > small {
   font-size: 0.6em;
 }
 
-#helpbutton > a:last-child {
-  margin-left: 3%;	
+header > .helpbuttons {
+  position: relative;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-left: 63%;
+  float: left;
 }
 
-#main {
-  float: left;
-  height: 550px;
-  width: 400px;	
-  padding-left: 39.3%;
-  padding-top: 115px;
+.helpbuttons > a:last-child {
+  margin-left: 3%;	
 }
 
 #main > h1 {
@@ -93,23 +106,20 @@ small {
 
 input::-webkit-input-placeholder { color: #aab8c2; }
 
-#сheckmarkblock {
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.87em;
-  color: #66757f;
-  margin-bottom: 25px;
+#agreementmarkblock > label {
+  cursor: pointer;	
 }
 
-#сheckmarkblock > span > a {
+#agreementmarkblock > label > a {
   text-decoration: none;
   color: #1c94e0;
 }
 
-#сheckmarkblock > span > a:hover {
+#agreementmarkblock > label > a:hover {
   text-decoration: underline;	
 }
 
-#button > input {
+.buttons > input {
   height: 50px;
   width: 390px;		
   border-radius: 25px 25px 25px 25px;
@@ -123,7 +133,7 @@ input::-webkit-input-placeholder { color: #aab8c2; }
   margin-bottom: 25px;
 }
 
-#button > input:hover {
+.buttons > input:hover {
   cursor: pointer;
   background-color: #006dbf;
   transition: background-color.3s ease;
@@ -145,14 +155,6 @@ input::-webkit-input-placeholder { color: #aab8c2; }
 
 #agreement > span > a:hover {
   text-decoration: underline;
-}
-
-#settings {
-  height: 80px;
-  width: 390px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.9em;
-  color: #66757f;
 }
 
 #settings > span > a {
