@@ -1,4 +1,4 @@
-function validate(form){
+ï»¿function validate(form){
   var userEmail = $("#email").val();
   var userPass = $("#password").val();
   var userPassCheck = $("#passwordcheck").val();
@@ -6,22 +6,22 @@ function validate(form){
   var CheckMail = (/[^\s@]+@[^\s@]+\.[^\s@]+/.test(userEmail));
 
   if ((userEmail.length < 5) || (!CheckMail)) {
-    alert("Íå ïðàâèëüíî ââåä¸í Email.");
+    alert("ÐÐµ Ð¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾ Ð²Ð²ÐµÐ´Ñ‘Ð½ Email.");
     windows.stop();
   }
 
   if ((userPass.length < 6) || (userPass == "") || (userPassCheck == "")) {
-    alert("Ïàðîëü íå ñîîòâåòñòâóåò òðåáîâàíèÿì!");
+    alert("ÐŸÐ°Ñ€Ð¾Ð»ÑŒ Ð½Ðµ ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚ Ñ‚Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð¸ÑÐ¼!");
     windows.stop();
   }
 
   if (userPass != userPassCheck) {
-    alert("Ïàðîëè íå ñîâïàäàþò!");
+    alert("ÐŸÐ°Ñ€Ð¾Ð»Ð¸ Ð½Ðµ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°ÑŽÑ‚!");
     windows.stop();
   }
 
   if (!userAgreement){
-    alert("Ñîãëàøåíèå íå ïîäòâåðæäåííî!");
+    alert("Ð¡Ð¾Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ðµ Ð½Ðµ Ð¿Ð¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´ÐµÐ½Ð½Ð¾!");
     windows.stop();
   }
 };
