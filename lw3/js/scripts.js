@@ -1,4 +1,4 @@
-function validate(form){
+ï»¿function validate(form){
   var userEmail = document.getElementById('email');
   var userPass = document.getElementById('password');
   var userPassCheck = document.getElementById('passwordcheck');
@@ -7,18 +7,18 @@ function validate(form){
     
 
   if ((userEmail.value.length < 5) || (!CheckMail)) {
-    alert("Íå ïðàâèëüíî ââåä¸í Email.");
+    alert("ÐÐµ Ð¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾ Ð²Ð²ÐµÐ´Ñ‘Ð½ Email.");
   }
 
   if ((userPass.value.length < 6) || (userPass = "") || (userPassCheck = "")) {
-    alert("Ïàðîëü íå ñîîòâåòñòâóåò òðåáîâàíèÿì!");
+    alert("ÐŸÐ°Ñ€Ð¾Ð»ÑŒ Ð½Ðµ ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚ Ñ‚Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð¸ÑÐ¼!");
   }
 
   if (userPass.value != userPassCheck.value) {
-    alert("Ïàðîëè äîëæíû ñîâïàäàòü");
+    alert("ÐŸÐ°Ñ€Ð¾Ð»Ð¸ Ð½Ðµ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°ÑŽÑ‚!");
   }
 
   if (!userAgreement.checked){
-    alert("Ïîëüçîâàòåëüñêîå ñîãëàøåíèå íå ïðèíÿòî!");
+    alert("Ð¡Ð¾Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ðµ Ð½Ðµ Ð¿Ð¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´ÐµÐ½Ð½Ð¾!");
   }
 };
