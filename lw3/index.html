@@ -12,12 +12,18 @@
 	  <div id="registrationBlock">
 	    <h1>Регистрация</h1>
 		<div class="inputsBlock">
-          <input type="text" id="email" name="email">
-          <input type="password" id="password" name="password">
-          <input type="password" id="passwordcheck" name="passwordcheck">
+          <input type="text" id="email" placeholder="Введите e-mail" name="email">
+          <input type="password" id="password" placeholder="Введите пароль" name="password">
+          <input type="password" id="passwordcheck" placeholder="Пароль ещё раз" name="passwordcheck">
 		</div>
-        <input type="checkbox" id="checkagreement">Согласен с правилами сайта
-        <input type="submit" value="Регистрация" name="submit">
+		<div id="agreementBlock">
+		  <label>
+            <input type="checkbox" id="checkagreement">&nbsp;Согласен с правилами сайта
+		  </label>
+		</div>
+		<div class="buttons">
+          <input type="submit" value="Регистрация" name="submit">
+		</div>
 	  </div>
     </form>
   </body>
