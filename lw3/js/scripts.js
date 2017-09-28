@@ -10,7 +10,7 @@
     windows.stop();
   }
 
-  if ((userPass.length < 6) || (userPass == "") || (userPassCheck == "")) {
+  if (userPass.length < 6) {
     alert("Пароль не соответствует требованиям!");
     windows.stop();
   }
