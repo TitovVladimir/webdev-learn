@@ -1,17 +1,24 @@
 ﻿<!DOCTYPE HTML>
 <html>
-  <script src="js/scripts.js"></script>
-  <script src="js/jquery-3.2.1.min.js"></script>
   <head>
-    <title>lab3</title>
-    <body>
-      <form onsubmit="return validate(this)">
-        <input type="text" id="email" name="email"/>
-        <input type="password" id="password" name="password"/>
-        <input type="password" id="passwordcheck" name="passwordcheck"/>
-        <input type="checkbox" id="checkagreement">Согласен с правилами сайта
-        <input type="submit" value="Регистрация" name="submit"/>
-      </form>
-    </body>
+    <meta charset="utf-8">
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+	<title>lab3</title>
   </head>
+  <body>
+    <form onsubmit="return validate(this)">
+	  <div id="registrationBlock">
+	    <h1>Регистрация</h1>
+		<div class="inputsBlock">
+          <input type="text" id="email" name="email">
+          <input type="password" id="password" name="password">
+          <input type="password" id="passwordcheck" name="passwordcheck">
+		</div>
+        <input type="checkbox" id="checkagreement">Согласен с правилами сайта
+        <input type="submit" value="Регистрация" name="submit">
+	  </div>
+    </form>
+  </body>
 </html>
