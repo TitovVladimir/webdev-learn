@@ -1,24 +1,27 @@
 function validate(form){
-  var userEmail = document.getElementById('email');
-  var userPass = document.getElementById('password');
-  var userPassCheck = document.getElementById('passwordcheck');
-  var userAgreement = document.getElementById('checkagreement');    
-  var CheckMail = (/[^\s@]+@[^\s@]+\.[^\s@]+/.test(userEmail.value));
-    
+  var userEmail = $("#email").val();
+  var userPass = $("#password").val();
+  var userPassCheck = $("#passwordcheck").val();
+  var userAgreement = $("#checkagreement").prop("checked");
+  var CheckMail = (/[^\s@]+@[^\s@]+\.[^\s@]+/.test(userEmail));
 
-  if ((userEmail.value.length < 5) || (!CheckMail)) {
+  if ((userEmail.length < 5) || (!CheckMail)) {
     alert("Не правильно введён Email.");
+    windows.stop();
   }
 
-  if ((userPass.value.length < 6) || (userPass = "") || (userPassCheck = "")) {
+  if ((userPass.length < 6) || (userPass == "") || (userPassCheck == "")) {
     alert("Пароль не соответствует требованиям!");
+    windows.stop();
   }
 
-  if (userPass.value != userPassCheck.value) {
-    alert("Пароли должны совпадать");
+  if (userPass != userPassCheck) {
+    alert("Пароли не совпадают!");
+    windows.stop();
   }
 
-  if (!userAgreement.checked){
-    alert("Пользовательское соглашение не принято!");
+  if (!userAgreement){
+    alert("Соглашение не подтвержденно!");
+    windows.stop();
   }
 };
