@@ -10,7 +10,7 @@
     alert("Не правильно введён Email.");
   }
 
-  if ((userPass.value.length < 6) || (userPass = "") || (userPassCheck = "")) {
+  if (userPass.value.length < 6) {
     alert("Пароль не соответствует требованиям!");
   }
 
