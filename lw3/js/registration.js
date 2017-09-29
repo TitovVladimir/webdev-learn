@@ -7,17 +7,19 @@
 
   if ((userEmail.length < 5) || (!CheckMail)) {
     alert("Не правильно введён Email.");
-  }
-
-  if (userPass.length < 6) {
-    alert("Пароль не соответствует требованиям!");
-  }
-
-  if (userPass != userPassCheck) {
-    alert("Пароли не совпадают!");
-  }
-
-  if (!userAgreement){
-    alert("Соглашение не подтвержденно!");
+  } else {
+    if (userPass.length < 6) {
+      alert("Пароль не соответствует требованиям!");
+    } else {
+      if (userPass != userPassCheck) {
+        alert("Пароли не совпадают!");
+      } else {
+        if (!userAgreement){
+          alert("Соглашение не подтвержденно!");
+        } else {
+          alert("Регистрация завершенна!");
+        }
+	  }
+	}
   }
 };
