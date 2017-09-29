@@ -8,13 +8,12 @@
     <title>lab3</title>
   </head>
   <body>
-    <form onsubmit="return registration(this)">
       <div id="registrationBlock">
         <h1>Регистрация</h1>
         <div class="inputsBlock">
-          <input type="text" id="email" required placeholder="Введите e-mail">
-          <input type="password" id="password" required placeholder="Введите пароль">
-          <input type="password" id="password_repeat" required placeholder="Пароль ещё раз">
+          <input type="text" id="email" placeholder="Введите e-mail">
+          <input type="password" id="password" placeholder="Введите пароль">
+          <input type="password" id="password_repeat" placeholder="Пароль ещё раз">
         </div>
         <div id="agreementBlock">
           <label>
@@ -22,9 +21,8 @@
           </label>
         </div>
         <div class="buttons">
-          <input type="submit" value="Регистрация">
+          <input type="submit" value="Регистрация" onclick="registration()">
         </div>
       </div>
-    </form>
   </body>
 </html>
