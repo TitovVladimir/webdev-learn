@@ -1,4 +1,4 @@
-function registration(form){
+function registration(){
   var userEmail = document.getElementById('email');
   var userPass = document.getElementById('password');
   var userPassRepeat = document.getElementById('password_repeat');
