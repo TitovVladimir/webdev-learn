@@ -1,4 +1,4 @@
-﻿function registration(form){
+﻿function registration(){
   var userEmail = $("#email").val();
   var userPass = $("#password").val();
   var userPassCheck = $("#password_repeat").val();
