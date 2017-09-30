@@ -27,3 +27,7 @@ function registration(){
     alert("Не все поля заполнены!");
   }
 };
+
+window.onload = function() {
+  document.getElementById('registration_block').addEventListener('onsubmit', registration());
+}
