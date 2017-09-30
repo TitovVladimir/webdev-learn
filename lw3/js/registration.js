@@ -29,5 +29,5 @@ function registration(){
 };
 
 window.onload = function() {
-  document.getElementById('registration_block').addEventListener('onsubmit', registration());
+  document.getElementById('registration_block').addEventListener('submit', registration);
 }
