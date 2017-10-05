@@ -42,6 +42,10 @@ header {
   color: #66757f;
 }
 
+.small_text {
+  font-size: 0.6em;
+}
+
 .helpbuttons {
   height: 15px;
   width: 320px;
@@ -52,10 +56,6 @@ header {
   font-family: 'Istok Web', sans-serif;
   font-size: 0.8em;
   text-decoration: none;	
-}
-
-.helpbuttons > a > span > b > small {
-  font-size: 0.6em;
 }
 
 header > .helpbuttons {
