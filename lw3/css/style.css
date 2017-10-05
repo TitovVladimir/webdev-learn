@@ -12,14 +12,14 @@ body {
   background-image: linear-gradient(90deg,#310b1b,#13041d);
 }
 
-#registrationBlock {
+#registration-block {
   padding-top: 150px;
   width: 350px;
   height: 600px;
   margin : auto;
 }
 
-#agreementBlock {
+#agreement-block {
   width: 350px;
   height: 40px;	
   color: #e6ecf0;
@@ -28,7 +28,7 @@ body {
   text-align: center;
 }
 
-#registrationBlock > h1 {
+#registration-block > h1 {
   font-size: 4.5em;
   text-align: center;
   font-family: 'Neucha', cursive;	
@@ -37,7 +37,7 @@ body {
   border-radius: 15px 15px 15px 15px;
 }
 
-.inputsBlock > input {
+.inputs-block > input {
   text-align: center;
   font-size: 1.5em;
   margin-top: 25px;
@@ -51,25 +51,25 @@ body {
   outline: 0;
 }
 
-.inputsBlock > input:focus {
+.inputs-block > input:focus {
   border-color: #7fc1d9;
 }
 
-.inputsBlock > input:last-child {
+.inputs-block > input:last-child {
   margin-bottom: 25px;
 }
 
-#agreementBlock > label {
+#agreement-block > label {
   cursor: pointer;
 }
 
-#agreementBlock > label > input {
+#agreement-block > label > input {
   width: 20px;
   height: 20px;	
   cursor: pointer;
 }
 
-#registrationBlock > .buttons > input {
+#registration-block > .buttons > input {
   margin-top: 25px;
   width: 350px;
   height: 55px;
@@ -83,7 +83,7 @@ body {
   transition: border.2s ease;
 }
 
-#registrationBlock > .buttons > input:hover {
+#registration-block > .buttons > input:hover {
   border: 6px solid #7fc1d9;
   transition: border.2s ease;	
   cursor: pointer;
