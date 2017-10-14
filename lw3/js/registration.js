@@ -1,6 +1,7 @@
-function Reg(){
-  var elem = document.getElementById('registration');
-  init = function() {
+function Reg(options){
+  var elem = options.elem;
+  this.init = function() {
+	 // this.email = $(elem).find('.email').val();
     this.email = document.getElementById('email');
 	console.log(this.email);
     this.pass = document.getElementById('password');
@@ -40,7 +41,11 @@ function Reg(){
       alert("Не все поля заполнены!");
     }
   }
-  init();
 }
 
-
+window.onload = function() {
+  	  var reg = new Reg({
+        elem: document.getElementById('registration')
+      });
+	  reg.init();
+}	
