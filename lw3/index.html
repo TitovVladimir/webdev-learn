@@ -7,17 +7,12 @@
   <body>
     <div id="registration">
       <form class="registration_block">
-        <input type="text" placeholder="Введите e-mail" id="email">
-        <input type="password" placeholder="Введите пароль" id="password">
-        <input type="password" placeholder="Пароль ещё раз" id="password_repeat">
+        <input type="text" placeholder="Введите e-mail" id="email" value="">
+        <input type="password" placeholder="Введите пароль" id="password" value="">
+        <input type="password" placeholder="Пароль ещё раз" id="password_repeat" value="">
         <input type="checkbox" id="check_agreement">Согласен с правилами
         <input type="submit" value="Регистрация">
       </form>
-	</div>
-	<script>
-	  var reg = new Reg({
-        elem: document.getElementById('registration')
-      });
-	</script>
+    </div>
   </body>
 </html>
