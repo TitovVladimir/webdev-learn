@@ -12,6 +12,22 @@ function Reg(options){
 	console.log(this.agreement);
   }
 
+  validate = function() {
+	var CheckMail = (/[^\s@]+@[^\s@]+\.[^\s@]+/.test(this.email.value));
+      if ((this.email.value.length < 5) || (!CheckMail)) {
+        alert("Не правильно введён Email.");
+      } 
+      if (this.pass.value.length < 6) {
+        alert("Пароль не соответствует требованиям!");
+      }
+      if (this.pass.value != this.passRepeat.value) {
+        alert("Пароли не совпадают!");
+      } 
+      if (!this.agreement.checked){
+        alert("Соглашение не подтвержденно!");
+      }    
+  }
+  
   success = function() {
 	  
   }
@@ -19,27 +35,7 @@ function Reg(options){
 	  
   }
   elem.onsubmit = function() {
-	if ((this.email.value != "") || (this.pass.value != "") || (this.passRepeat.value != "")) {
-      if ((userEmail.value.length < 5) || (!CheckMail)) {
-        alert("Не правильно введён Email.");
-      } else {
-        if (userPass.value.length < 6) {
-          alert("Пароль не соответствует требованиям!");
-        } else {
-          if (userPass.value != userPassRepeat.value) {
-            alert("Пароли не совпадают!");
-          } else {
-            if (!userAgreement.checked){
-              alert("Соглашение не подтвержденно!");
-            } else {
-              alert("Регистрация завершенна!");
-            }
-          }
-        }
-      }
-    } else {
-      alert("Не все поля заполнены!");
-    }
+	validate();
   }
 }
 
